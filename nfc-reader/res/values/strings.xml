@@ -60,7 +60,7 @@
     <string name="scrollSpeed">Text Scroll Speed</string>
     <string name="scrollSpeedSummary">Select Text Scroll Speed</string>    
     <string name="dialogTitlescrollSpeed">Text Scroll Speed</string>
-    <string name="scrollSpeed_default_value">1</string>  
+    <string name="scrollSpeed_default_value">50</string>  
     
     <string name="twitterRefresh">twitterRefresh</string>
     <string name="twitterRefreshTitle">Twitter refresh interval</string>

@@ -140,7 +140,7 @@ public class TagViewer extends IOIOActivity {
 	private boolean debug_;
 	private static int appAlreadyStarted = 0;
 	//private int scrollSpeedProgress = 1;
-	private static int scrollSpeedValue = 100;
+	private static int scrollSpeedValue = 50;
 	private int fontSizeValue = 26;
 	
 	private Typeface selectedFont;
@@ -163,7 +163,7 @@ public class TagViewer extends IOIOActivity {
 	private static final int WENT_TO_PREFERENCES = 1;
 	private int prefYoffset_;
 	private int yOffset = 0;
-	private String prefScrollSpeed_;
+	//private String prefScrollSpeed_;
 	private int fontSizeStepper = 8;
 	
 	private static int ColorWheel;
@@ -647,6 +647,20 @@ public class TagViewer extends IOIOActivity {
   	        resources.getString(R.string.scrollSpeed),
   	        resources.getString(R.string.scrollSpeed_default_value))); 
      
+     switch (scrollingSpeed_) {  //get this from the preferences
+     case 0:
+    	 scrollSpeedValue = 100;
+    	 break;
+     case 1:
+    	 scrollSpeedValue = 50;
+    	 break;
+     case 2:
+    	 scrollSpeedValue = 1;
+    	 break;
+     default:	    		 
+    	 scrollSpeedValue = 50;
+     }
+     
      switch (color_) {  //get this from the preferences
      case 0:
     	 ColorWheel = Color.GREEN;
@@ -943,6 +957,7 @@ public class TagViewer extends IOIOActivity {
 	            paint.getTextBounds(scrollingText, 0, scrollingText.length(), bounds);
 	       		yCenter = (KIND.height / 2) + ((bounds.height())/2 + yOffset);
 	    	    scrollingtextTimer_ = new ScrollingTextTimer (100000,scrollSpeedValue);
+	    	    //scrollingtextTimer_ = new ScrollingTextTimer (100000,scrollingSpeed_);
 		 		scrollingtextTimer_.start();
        }
     	
