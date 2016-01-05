@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    
+<string-array name="scrollingKeyFramesEntries">
+    <item>Most Smooth</item>
+    <item>Smoother</item>
+    <item>Medium</item>
+    <item>Less Smooth</item>
+    <item>Least Smooth</item>
+</string-array>
+
+<string-array name="scrollingKeyFramesValues">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+</string-array>
+    
+ <string-array name="twitterRefreshArray">
+    <item>10s</item>
+    <item>30s</item>
+    <item>1 min</item>
+    <item>2 min</item>
+    <item>5 min</item>
+    <item>10 min</item>
+    <item>30 min</item>
+    <item>1 hour</item>
+    <item>2 hours</item>
+    <item>4 hours</item>
+    <item>8 hours</item>
+    <item>16 hours</item>
+    <item>24 hours</item>
+</string-array>
+	
+<string-array name="twitterRefreshValues">
+     <item>10</item>
+    <item>30</item>
+    <item>60</item>
+    <item>120</item>
+    <item>300</item>
+    <item>600</item>
+    <item>1800</item>
+    <item>3600</item>
+    <item>7200</item>
+    <item>14400</item>
+    <item>28800</item>
+    <item>57600</item>
+    <item>86400</item>
+</string-array>
+	
+<string-array name="matrix_options">
+    <item>Seeed 32x16</item>
+    <item>Adafruit 32x16</item>
+    <item>Seeed 32x32</item>
+    <item>PIXEL 32x32 (DEFAULT)</item>
+    <item>64x32 (2x1 horz)</item>
+    <item>32x64 (1x2 vert)</item>
+    <item>Mirrored (2 displays)</item>
+    <item>128x32 (4x1 horz)</item>
+    <item>32x128 (1x4 vert)</item>
+    <item>SUPER PIXEL 64x64 (2x2 square)</item>
+    <item>Adafruit 32x32</item>
+    <item>Adafruit 32x32 Color Swap</item>
+    <item>Adafruit 64x32</item>
+    <item>Adafruit 64x64</item>
+    <item>Adafruit 128x32</item>
+    <item>Adafruit 32x128</item>
+    <item>Adafruit 64x16</item>
+</string-array>
+	
+<string-array name="matrix_values">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+    <item>13</item>
+    <item>14</item>
+    <item>15</item>
+    <item>16</item>
+    <item>17</item>
+</string-array>
+
+<string-array name="scrollSpeed_options">
+  <item>1... Slowest</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10... Fastest</item>
+</string-array>
+	
+<string-array name="scrollSpeed_values">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+</string-array>
+
+
+
+
+
+</resources>
+

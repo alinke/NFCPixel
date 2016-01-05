@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 Adam Nybäck
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">NFC Smart LED</string>
+    <string name="intro_message">This is a simple app to read various tags (NDEF, RFID, FeliCa, ISO 14443, etc).\n\nYou use it by holding a tag/card against the back of your device.\n\n</string>
+    <string name="error">Error</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+    <string name="menu_main_clear_title">Clear All</string>
+    
+        <string name="seekbar_label">Scrolling Speed:</string>
+    <string name="textbox_label">Enter Scrolling Text:</string>
+    <string name="defaultText">Type Text Here</string>
+    <string name="defaultScrollSpeed"></string>
+
+   
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="menu_about_title">About</string> 
+    <string name="menu_about_summary">http://ledpixelart.com\n\nDesigned by Open Gadgets LLC</string>
+    <string name="versionString">Version</string> 
+    
+    <string name="fontSpinner_title">Select Font</string> 
+         
+   <string name="oneTimeSetupString">One Time Setup: Copying stock images to your SD card.</string> 
+   <string name="bluetoothPairingString">Please ensure Bluetooth pairing has been completed prior. The Bluetooth pairing code is: 0000."</string> 
+    
+   
+   <string name="menu_instructions_title">Instructions</string>
+   <string name="setupInstructionsString">Pair your Android device to PIXEL which will show up as \'PIXEL\' in Bluetooth using code 0000</string>
+   <string name="setupInstructionsStringTitle">Instructions</string>   
+    
+     
+    <string name="prefTitle">Smart LED Settings</string>
+    <string name="menu_prefs_title">Settings</string>
+    <string name="prefSummary">Smart LED Settings</string>
+    
+    <string name="scanAll">Show All Album Pics</string>
+    <string name="pref_scanAll_default">false</string>
+    <string name="scanAllSummary">Only images in the pixel/pixelart folder of your SD card will be displayed. Checking this box displays all SD card pictures.</string>
+  
+    <string name="OKText">OK</string>   
+    <string name="notFoundString">Smart LED Not Found</string>   
+   
+    <string name="selected_matrix">selected_matrix</string>
+    <string name="matrix">Smart LED Model</string>
+    <string name="matrixSummary">Select Smart LED Model</string>    
+    <string name="dialogTitleMatrix">Smart LED Model</string>
+    <string name="matrix_default_value">3</string>   
+    
+    <string name="twitterRefresh">twitterRefresh</string>
+    <string name="twitterRefreshTitle">Twitter refresh interval</string>
+    <string name="twitterRefreshSummary">How often to refresh the Twitter search feed</string>   
+    <string name="twitterRefreshDefault">60</string>   
+    
+    <string name="twitterSettingsTitle">Twitter</string>   
+    <string name="twitterSettingsTitleSummary">Twitter Settings</string>  
+    
+    <string name="twitterMode">Twitter Mode</string>    
+    <string name="twitterModeDefault">false</string>
+    <string name="twitterModeSummary">Twitter feed search</string>
+   
+    <string name="twitterFilter">Filter Tweets</string>    
+    <string name="twitterFilterDefault">true</string>
+    <string name="twitterFilterSummary">Filters Tweets containing http:// or @</string>
+    
+    <string name="twitterSearchString">Twitter Search Term</string>    
+    <string name="pref_twitterSearchString">pref_twitterSearchString</string>
+    <string name="twitterSearchStringDefault">cats</string>
+    <string name="twitterSearchStringSummary">Returns Tweets matching this search term</string>
+    
+    
+    <string name="scrollingKeyFrames">scrollingKeyFrames</string>
+    <string name="scrollingKeyFramesTitle">Scrolling Smoothness</string>
+    <string name="scrollingKeyFramesSummary">How smooth the text scrolls, less smoothness equals faster scrolling</string>    
+    <string name="scrollingKeyFramesDialogTitle">Scrolling Smoothness</string>
+    <string name="scrollingKeyFramesDefault">1</string> 
+    
+    <string name="menu_btPair_title">Bluetooth Pair PIXEL | Code 0000 or 4545 for PIXEL V1</string>  
+    
+   
+    <string name="BootloaderVersionString">Bootloader Version</string> 
+    <string name="FirmwareVersionString">Firmware Version</string> 
+    <string name="LibraryVersionString">Library Version</string> 
+    <string name="HardwareVersionString">Hardware Version</string> 
+    
+    <string name="selected_scrollSpeed">selected_scrollSpeed</string>
+    <string name="scrollSpeedTitle">Text Scroll Speed</string>
+    <string name="scrollSpeedSummary">How fast the text srolls</string>    
+    <string name="dialogTitlescrollSpeed">Text Scroll Speed</string>
+    <string name="scrollSpeed_default_value">7</string>   
+    
+    
+    <string name="bluetooth_pair">Blueooth Pairing</string>
+    <string name="bluetooth_pairSummary">Shortcut to the Bluetooth settings screen. Pair to IOIO using code: 0000</string>
+    
+    <string name="slideShowtitle">Slide Show Settings</string>
+    <string name="slideShowtitleSummary">Slide Show Settings</string>
+   
+    <string name="slideShowMode">Slide Show Mode</string>    
+    <string name="slideShowModeDefault">false</string>
+    <string name="slideShowModeSummary">Slide Show Mode</string>
+    
+    <string name="noSleep">Disable Power Savings</string>    
+    <string name="pref_noSleepDefault">false</string>
+    <string name="noSleepSummary">Forces the app to be always on, your device will not go into power savings mode while this app is running. Good if using as a Kiosk for example. </string>
+    
+    <string name="menu_rescan_title">Rescan</string>
+    <string name="rescan_screen_verbage">Now scanning your SD card or internal memory for new images or deletions, just a moment&#8230;</string>
+    
+    <string name="startup_verbage_1">One Time Setup</string>
+    <string name="startup_verbage_2">Copying stock images to your SD card or internal memory&#8230;</string>
+    <string name="firstTime_instructions">After this completes, select Instructions from the menu to use your own images</string>
+    
+    
+    <string name="imageDisplayDuration">Image Display Duration</string>    
+    <string name="pref_imageDisplayDuration">pref_imageDisplayDuration</string>
+    <string name="imageDisplayDurationDefault">5</string>
+    <string name="imageDisplayDurationSummary">Number of seconds each image is displayed</string>
+    
+    <string name="scrollSpeed">Scroll Speed</string>    
+    <string name="pref_scrollSpeed">pref_scrollSpeed</string>
+    <string name="scrollSpeedDefault">7</string>
+    
+    <string name="pauseBetweenImagesDuration">Pause Between Images</string>    
+    <string name="pref_pauseBetweenImagesDuration">pref_pauseBetweenImagesDuration</string>
+    <string name="pauseBetweenImagesDurationDefault">3</string>
+    <string name="pauseBetweenImagesDurationSummary">Number of seconds to pause in between images</string>
+    
+    <string name="stopSlideShowMessage">You\'re still in slide show mode, swipe from right to left to end the slide show and then you can select a single image</string>
+    <string name="loadingImagesPlsWaitTitle">Please Wait</string>
+    <string name="loadingImagesPlsWait">Loading images, just a moment&#8230;</string>
+    
+    <string name="slideShowStopInstructions">Swipe from right to left to stop the Slide Show</string>
+    <string name="slideShowStartVerbage">Starting Slide Show&#8230;</string>
+    <string name="slideShowStopVerbage">Slide Show Stopped</string>    
+    <string name="slideShowStartInstructions">Tap to display a single image or Swipe from left to right to start a Slide Show</string>
+    
+    <string name="debugMode">Debug Mode</string>    
+    <string name="pref_debugMode">pref_debugMode</string>
+    <string name="pref_debugModeDefault">false</string>    
+    <string name="debugModeSummary"></string>
+    
+     <string name="AutoSelectPanel">Auto Select Smart LED Model</string>    
+    <string name="pref_AutoSelectPanel">pref_AutoSelectPanel</string>
+    <string name="pref_AutoSelectPanelDefault">false</string>
+    <string name="AutoSelectPanelSummary">Turn this off if you want to manually select the LED panel</string>
+    
+    
+    <string name="dimDuringSlideShow">Dim During Slide Show</string>    
+    <string name="dimDuringSlideShowDefault">true</string>
+    <string name="dimDuringSlideShowSummary">Saves battery life by dimming screen during the Slide Show</string>
+    
+    <style name="ButtonText">
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_margin">3dp</item>
+    <item name="android:textSize">22dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:shadowColor">#000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">2</item>
+</style>
+    
+    
+    
+    
+    
+    
+    
+</resources>
