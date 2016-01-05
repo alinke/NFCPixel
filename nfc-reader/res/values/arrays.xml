@@ -90,6 +90,28 @@
     <item>17</item>
 </string-array>
 
+<string-array name="color_options">
+    <item>Green</item>
+    <item>Blue</item>
+    <item>Red</item>
+    <item>Yellow</item>
+    <item>Magenta</item>
+    <item>Pink</item>
+    <item>Gray</item>
+    <item>Dark Gray</item>
+</string-array>
+	
+<string-array name="color_values">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+</string-array>
+
 <string-array name="scrollSpeed_options">
   <item>1... Slowest</item>
     <item>2</item>

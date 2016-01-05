@@ -178,6 +178,8 @@ public class TagViewer extends IOIOActivity {
 	private String prefFontSize;
 	private int prefColor;
 	private String prefScrollingText;
+	private int color_;
+	private int scrollingSpeed_;
 	
 	private boolean AutoSelectPanel_ = false;
 	
@@ -204,6 +206,9 @@ public class TagViewer extends IOIOActivity {
         mNdefPushMessage = new NdefMessage(new NdefRecord[] { newTextRecord(
                 "Message from NFC Reader :-)", Locale.ENGLISH, true) });
         
+        bounds = new Rect();
+        paint = new Paint();
+        
         ///********** Al added code *******************
         connectTimer = new ConnectTimer(30000,5000); //pop up a message if it's not connected by this timer
  		connectTimer.start(); //this timer will pop up a message box if the device is not found
@@ -219,24 +224,24 @@ public class TagViewer extends IOIOActivity {
         	this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); //disables sleep mode
         }	
         
+      
+        
         savePrefs = getSharedPreferences("appSave", MODE_PRIVATE);
-        prefFontSize = savePrefs.getString("fontKey", "14");
-       // prefYoffset_ = prefs.getInt("prefYoffset", KIND.height/2); //default to in the middle
+       prefFontSize = savePrefs.getString("fontKey", "14");
+       prefYoffset_ = prefs.getInt("prefYoffset", KIND.height/2); //default to in the middle
         
         prefYoffset_ = savePrefs.getInt("prefYoffset", KIND.height/2); //default to in the middle
         yOffset = prefYoffset_ - KIND.height/2; //16 - 32/2 = 0 or 20 - 16 = 4
         
-        prefScrollSpeed_ = savePrefs.getString("prefScrollSpeed", "1");
-        prefScrollingText = savePrefs.getString("scrollingTextKey","TYPE TEXT HERE");
-        prefColor = savePrefs.getInt("colorKey", 333333);
+        //prefScrollSpeed_ = savePrefs.getString("prefScrollSpeed", "1");
+        //prefScrollingText = savePrefs.getString("scrollingTextKey","TYPE TEXT HERE");
+        //prefColor = savePrefs.getInt("colorKey", 333333);
         prefFontPosition = savePrefs.getInt("fontPositionKey", 0);
         
         context = getApplicationContext();
         enableUi(true);
         
-        bounds = new Rect();
         
-        paint = new Paint();
         
     	//TO DO fix later
         //if (prefColor != 333333) {   //let's set the last color from prefs
@@ -244,8 +249,8 @@ public class TagViewer extends IOIOActivity {
     	//	paint.setColor(prefColor); 
     	//}
     	//else {
-    		ColorWheel = Color.GREEN;
-        	paint.setColor(ColorWheel);
+    		//ColorWheel = Color.GREEN;
+        	//paint.setColor(ColorWheel);
     	//}
         
         
@@ -633,6 +638,47 @@ public class TagViewer extends IOIOActivity {
      matrix_model = Integer.valueOf(prefs.getString(   //the selected RGB LED Matrix Type
     	        resources.getString(R.string.selected_matrix),
     	        resources.getString(R.string.matrix_default_value))); 
+     
+     color_ = Integer.valueOf(prefs.getString(   
+ 	        resources.getString(R.string.selected_color),
+ 	        resources.getString(R.string.color_default_value))); 
+     
+     scrollingSpeed_ = Integer.valueOf(prefs.getString(   
+  	        resources.getString(R.string.scrollSpeed),
+  	        resources.getString(R.string.scrollSpeed_default_value))); 
+     
+     switch (color_) {  //get this from the preferences
+     case 0:
+    	 ColorWheel = Color.GREEN;
+    	 break;
+     case 1:
+    	 ColorWheel = Color.BLUE;
+    	 break;
+     case 2:
+    	 ColorWheel = Color.RED;
+    	 break;
+     case 3:
+    	 ColorWheel = Color.YELLOW;
+    	 break;
+     case 4:
+    	 ColorWheel = Color.MAGENTA;
+    	 break;
+     case 5:
+    	 ColorWheel = Color.CYAN;
+    	 break;	 
+     case 6:
+    	 ColorWheel = Color.GRAY; 
+    	 break;	 	 
+     case 7: //this one doesn't work and we don't use it rigth now
+    	 ColorWheel = Color.DKGRAY;
+    	 break;
+     default:	    		 
+    	 ColorWheel = Color.GREEN;
+     }
+     	
+     paint.setColor(ColorWheel);
+ 	
+     
      
     /* twitterSearchString = prefs.getString(   
  	        resources.getString(R.string.pref_twitterSearchString),
