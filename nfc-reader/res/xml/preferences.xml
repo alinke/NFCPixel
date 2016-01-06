@@ -54,7 +54,7 @@
     android:summary="@string/scrollSpeedSummary"
     android:entries="@array/scrollSpeed_options"
     android:entryValues="@array/scrollSpeed_values"
-    android:dialogTitle="@string/dialogTitleScrollSpeed"
+    android:dialogTitle="@string/dialogTitlescrollSpeed"
     android:defaultValue="@string/matrix_default_value" />
     
     <CheckBoxPreference
