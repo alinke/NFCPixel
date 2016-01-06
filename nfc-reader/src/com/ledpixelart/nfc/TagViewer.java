@@ -224,8 +224,7 @@ public class TagViewer extends IOIOActivity {
         	this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN | WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); //disables sleep mode
         }	
         
-      
-        
+       //***************these are not used right now
         savePrefs = getSharedPreferences("appSave", MODE_PRIVATE);
        prefFontSize = savePrefs.getString("fontKey", "14");
        prefYoffset_ = prefs.getInt("prefYoffset", KIND.height/2); //default to in the middle
@@ -237,6 +236,9 @@ public class TagViewer extends IOIOActivity {
         //prefScrollingText = savePrefs.getString("scrollingTextKey","TYPE TEXT HERE");
         //prefColor = savePrefs.getInt("colorKey", 333333);
         prefFontPosition = savePrefs.getInt("fontPositionKey", 0);
+        //*****************
+        
+      
         
         context = getApplicationContext();
         enableUi(true);
@@ -358,7 +360,7 @@ public class TagViewer extends IOIOActivity {
                 
                 String[] separated = TagPayloadString.split("en");
                 TagPayloadString = separated[1]; 
-                showToast(TagPayloadString);
+                //showToast(TagPayloadString);
                 
                 scrollText(TagPayloadString, false); //false means don't write, just stream the text to the Smart LED
              
@@ -633,7 +635,6 @@ public class TagViewer extends IOIOActivity {
      scrollingKeyFrames_ = Integer.valueOf(prefs.getString(   //how smooth the scrolling, essentially the keyframes
  	        resources.getString(R.string.scrollingKeyFrames),
  	        resources.getString(R.string.scrollingKeyFramesDefault))); 
-     
      
      matrix_model = Integer.valueOf(prefs.getString(   //the selected RGB LED Matrix Type
     	        resources.getString(R.string.selected_matrix),

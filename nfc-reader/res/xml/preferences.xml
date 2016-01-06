@@ -55,7 +55,7 @@
     android:entries="@array/scrollSpeed_options"
     android:entryValues="@array/scrollSpeed_values"
     android:dialogTitle="@string/dialogTitlescrollSpeed"
-    android:defaultValue="@string/matrix_default_value" />
+    android:defaultValue="@string/scrollSpeed_default_value" />
     
     <CheckBoxPreference
     android:title="@string/noSleep"
